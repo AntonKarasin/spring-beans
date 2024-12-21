@@ -3,19 +3,11 @@ package ru.be_prog;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 @Configuration
 public class ApplicationConfiguration {
-
-    @Bean(name = "hello-bean")
-    public SpringHelloWorld getHelloBean() {
-        SpringHelloWorld bean = new SpringHelloWorld();
-        bean.setMessage("Hello World from Spring!!!");
-        return bean;
-    }
 
 
     @Bean(name = "car-bean")
