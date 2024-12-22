@@ -1,12 +1,14 @@
 package ru.be_prog;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import java.util.*;
 
 @Configuration
+@ComponentScan(basePackages = "ru.be_prog")
 public class ApplicationConfiguration {
 
 
@@ -15,15 +17,6 @@ public class ApplicationConfiguration {
     public Car getCarBean() {
         Car bean = new Car();
         bean.setBrand(randomCarBrand());
-        return bean;
-    }
-
-    @Bean(name = "person-bean")
-    @Scope("prototype")
-    public Person getPerson() {
-        Person bean = new Person();
-        Car car = getCarBean();
-        bean.setCar(car);
         return bean;
     }
 
