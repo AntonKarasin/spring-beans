@@ -11,15 +11,6 @@ import java.util.*;
 @ComponentScan(basePackages = "ru.be_prog")
 public class ApplicationConfiguration {
 
-
-    @Bean(name = "car-bean")
-    @Scope("prototype")
-    public Car getCarBean() {
-        Car bean = new Car();
-        bean.setBrand(randomCarBrand());
-        return bean;
-    }
-
     private String randomCarBrand() {
         int randomIndex = new Random().nextInt(CAR_BRANDS.size());
         return CAR_BRANDS.get(randomIndex);

@@ -6,9 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("prototype")
 public class Driver implements TransportDriver {
-
     private final Transport transport;
-
     public Driver(Transport transport) {
         this.transport = transport;
     }
