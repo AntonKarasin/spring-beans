@@ -15,9 +15,9 @@ public class SpringBeansApplication {
         System.out.println(rainbowSimple.getRainbowColors());
         System.out.println(rainbowSimple.getRainbowMnemonic());
 
-//        System.out.println("RainbowAdvanced:");
-//        RainbowAdvanced rainbowAdvanced = context.getBean(RainbowAdvanced.class);
-//        System.out.println(rainbowAdvanced.getRainbowColors());
-//        System.out.println(rainbowAdvanced.getRainbowMnemonic());
+        System.out.println("RainbowAdvanced:");
+        RainbowAdvanced rainbowAdvanced = context.getBean(RainbowAdvanced.class);
+        System.out.println(rainbowAdvanced.getRainbowColors());
+        System.out.println(rainbowAdvanced.getRainbowMnemonic());
     }
 }
