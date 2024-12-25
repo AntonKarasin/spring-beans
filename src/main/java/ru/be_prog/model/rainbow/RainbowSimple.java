@@ -23,14 +23,15 @@ public class RainbowSimple extends AbstractRainbow {
     @Autowired
     private Purple purple;
 
-    public RainbowSimple(Red red, Green green) {this.red = red; this.green = green; }
+    public RainbowSimple(Red red, Green green) {
+        this.red = red;
+        this.green = green;
+    }
 
     @Autowired
     public void setOrange(Orange orange) {
         this.orange = orange;
     }
-
-    // public RainbowSimple(Green green) { this.green = green; }
 
     @Autowired
     public void setLightBlue(LightBlue lightBlue) {
